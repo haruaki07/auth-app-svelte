@@ -1,0 +1,56 @@
+.user {
+	@apply mt-8;
+	.title,
+	.subtitle {
+		@apply ml-5;
+		@screen md {
+			@apply m-0;
+		}
+	}
+	.title {
+		@apply text-4xl;
+	}
+	.subtitle {
+		font-size: 18px;
+		@apply mt-2 mb-6;
+	}
+	.label,
+	.value {
+		@apply px-5 py-6;
+		@screen md {
+			@apply px-8 p-6;
+		}
+	}
+	.table {
+		@apply w-full table-auto;
+		@screen md {
+			width: 800px;
+		}
+		tr {
+			border-color: #e0e0e0;
+			@apply border-t border-b;
+			&:first-child {
+				@apply border-t-0;
+				@screen md {
+					@apply border-t;
+				}
+			}
+			&:last-child {
+				@apply border-b-0;
+			}
+		}
+	}
+	.label {
+		font-size: 13px;
+		border-color: #bdbdbd;
+		@apply text-gray-600 font-medium uppercase;
+	}
+	.value {
+		font-size: 16px;
+		@apply font-medium text-right;
+		@screen md {
+			font-size: 18px;
+			@apply text-left;
+		}
+	}
+}

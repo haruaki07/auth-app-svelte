@@ -1,0 +1,40 @@
+.editprofile {
+	@apply text-center mt-8;
+	.title {
+		@apply text-2xl;
+	}
+	.subtitle {
+		font-size: 13px;
+		color: #828282;
+		@apply mt-2;
+	}
+	.header, form {
+		@apply p-6 px-10;
+		@screen md {
+			@apply px-8;
+		}
+	}
+	form {
+		width: 100%;
+		@screen md {
+			width: 800px;
+		}
+		@apply pt-0;
+	}
+	.form-group {
+		width: 100%;
+		@apply mb-4;
+		@screen md {
+			width: 400px;
+		}
+		label {
+			font-size: 14px;
+			color: #4f4f4f;
+			@apply font-medium inline-block w-full;
+		}
+	}
+}
+
+.error-msg {
+  @apply text-red-600 text-sm;
+}

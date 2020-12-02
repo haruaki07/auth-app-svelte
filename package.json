@@ -1,0 +1,35 @@
+{
+  "name": "auth-app-svelte",
+  "version": "1.0.0",
+  "description": "Submission for devchallenges.io",
+  "main": "src/index.js",
+  "author": "haruaki07",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "pnpm install --prefix client && pnpm build --prefix client",
+    "dev:client": "pnpm run dev --prefix client",
+    "dev:server": "cross-env NODE_ENV=dev nodemon server.js --ignore client/",
+    "dev": "concurrently \"pnpm run dev:server\" \"pnpm run dev:client\""
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^5.4.0",
+    "argon2": "^0.27.0",
+    "axios": "^0.20.0",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "googleapis": "^61.0.0",
+    "joi": "^17.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7",
+    "multer": "^1.4.2",
+    "qs": "^6.9.4"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.4"
+  }
+}
