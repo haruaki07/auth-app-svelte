@@ -1,3 +1,10 @@
+# auth-app-svelte-frontend
+submission for https://devchallenges.io/challenges/N1fvBjQfhlkctmwj1tnw
+
+[Backend](https://github.com/haruaki07/auth-app-svelte/tree/master)
+
+[Live Demo](https://auth-app-svelte.vercel.app)
+
 *Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
